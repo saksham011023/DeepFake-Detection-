@@ -28,7 +28,7 @@ from tqdm import tqdm
 
 import blazeface
 from blazeface import BlazeFace, VideoReader, FaceExtractor
-from isplutils.utils import adapt_bb
+from Utils.utils import adapt_bb
 
 
 def parse_args(argv):

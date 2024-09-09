@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from isplutils.utils import extract_meta_av
+from Utils.utils import extract_meta_av
 
 
 def parse_args(argv):

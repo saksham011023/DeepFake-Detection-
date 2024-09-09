@@ -21,7 +21,7 @@ import torch
 import torch.multiprocessing
 from torchvision.transforms import ToPILImage, ToTensor
 
-from isplutils import utils, split
+from Utils import utils, split
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 import torch.nn as nn
@@ -34,7 +34,7 @@ from tqdm import tqdm
 from PIL import ImageChops, Image
 
 from architectures import fornet
-from isplutils.data import FrameFaceIterableDataset, load_face
+from Utils.data import FrameFaceIterableDataset, load_face
 
 
 def main():

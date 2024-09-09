@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from isplutils.utils import extract_meta_av, extract_meta_cv
+from Utils.utils import extract_meta_av, extract_meta_cv
 
 
 def parse_args(argv):

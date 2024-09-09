@@ -27,9 +27,9 @@ from tqdm import tqdm
 
 from architectures import tripletnet
 from train_binclass import save_model, tb_attention
-from isplutils.data import FrameFaceIterableDataset
-from isplutils.data_siamese import FrameFaceTripletIterableDataset
-from isplutils import split, utils
+from Utils.data import FrameFaceIterableDataset
+from Utils.data_siamese import FrameFaceTripletIterableDataset
+from Utils import split, utils
 
 
 def main():

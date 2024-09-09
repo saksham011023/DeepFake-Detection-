@@ -8,7 +8,7 @@ sys.path.append('..')
 from blazeface import FaceExtractor, BlazeFace , VideoReader
 # from blazeface import FaceExtractor, BlazeFace, VideoReader
 from architectures import fornet,weights
-from isplutils import utils
+from Utils import utils
 
 def video_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',frames=100,video_path="notebook/samples/mqzvfufzoq.mp4"):
     

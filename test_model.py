@@ -25,8 +25,8 @@ from tqdm import tqdm
 
 from architectures import fornet
 from architectures.fornet import FeatureExtractor
-from isplutils import utils, split
-from isplutils.data import FrameFaceDatasetTest
+from Utils import utils, split
+from Utils.data import FrameFaceDatasetTest
 
 
 def main():

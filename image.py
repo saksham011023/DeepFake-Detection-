@@ -8,7 +8,7 @@ sys.path.append('..')
 
 from blazeface import FaceExtractor, BlazeFace
 from architectures import fornet,weights
-from isplutils import utils
+from Utils import utils
 
 def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_path="notebook/samples/lynaeydofd_fr0.jpg"):
     """
