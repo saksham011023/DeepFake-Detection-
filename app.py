@@ -76,6 +76,6 @@ st.markdown(
     '''
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-The source code is available on [GitHub](https://github.com/Sneh-T-Shah/deepfake-detection) <i class="fa fa-github"></i>
+The source code is available on [GitHub](https://github.com/saksham011023/DeepFake-Detection-) <i class="fa fa-github"></i>
 ''', unsafe_allow_html=True
 )
