@@ -1,14 +1,4 @@
-"""
-Video Face Manipulation Detection Through Ensemble of CNNs
 
-Image and Sound Processing Lab - Politecnico di Milano
-
-Nicolò Bonettini
-Edoardo Daniele Cannas
-Sara Mandelli
-Luca Bondi
-Paolo Bestagini
-"""
 from collections import OrderedDict
 
 import torch
@@ -19,9 +9,7 @@ from torchvision import transforms
 
 from . import externals
 
-"""
-Feature Extractor
-"""
+
 
 
 class FeatureExtractor(nn.Module):
@@ -41,9 +29,6 @@ class FeatureExtractor(nn.Module):
         return transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 
 
-"""
-EfficientNet
-"""
 
 
 class EfficientNetGen(FeatureExtractor):
@@ -72,9 +57,7 @@ class EfficientNetB4(EfficientNetGen):
         super(EfficientNetB4, self).__init__(model='efficientnet-b4')
 
 
-"""
-EfficientNetAutoAtt
-"""
+
 
 
 class EfficientNetAutoAtt(EfficientNet):
@@ -171,9 +154,7 @@ class EfficientNetAutoAttB4(EfficientNetGenAutoAtt):
         super(EfficientNetAutoAttB4, self).__init__(model='efficientnet-b4', width=0)
 
 
-"""
-Xception
-"""
+
 
 
 class Xception(FeatureExtractor):
@@ -193,9 +174,6 @@ class Xception(FeatureExtractor):
         return self.xception.forward(x)
 
 
-"""
-Siamese tuning
-"""
 
 
 class SiameseTuning(FeatureExtractor):
