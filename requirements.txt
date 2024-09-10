@@ -10,3 +10,6 @@ torch
 scipy
 matplotlib
 numpy
+streamlit
+PIL 
+api
