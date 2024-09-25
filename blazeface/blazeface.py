@@ -194,13 +194,7 @@ class BlazeFace(nn.Module):
 
     def _tensors_to_detections(self, raw_box_tensor: torch.Tensor, raw_score_tensor: torch.Tensor, anchors) -> List[
         torch.Tensor]:
-        """The output of the neural network is a tensor of shape (b, 896, 16)
-        containing the bounding box regressor predictions, as well as a tensor 
-        of shape (b, 896, 1) with the classification confidences.
-
-        This function converts these two "raw" tensors into proper detections.
-        Returns a list of (num_detections, 17) tensors, one for each image in
-        the batch.
+        """
 
         This is based on the source code from:
         mediapipe/calculators/tflite/tflite_tensors_to_detections_calculator.cc

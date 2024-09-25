@@ -1,11 +1,5 @@
 """
-Index Celeb-DF v2
-Image and Sound Processing Lab - Politecnico di Milano
-Nicolò Bonettini
-Edoardo Daniele Cannas
-Sara Mandelli
-Luca Bondi
-Paolo Bestagini
+Face Extraction from videos and images frame by frame and crop and resizing
 """
 import argparse
 from multiprocessing import Pool
